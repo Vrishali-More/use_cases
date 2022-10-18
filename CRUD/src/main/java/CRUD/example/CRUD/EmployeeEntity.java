@@ -15,7 +15,14 @@ public class EmployeeEntity {
 		
 		private Integer id;
 		private String employeeName;
+		private String deperment;
 		
+		public String getDeperment() {
+			return deperment;
+		}
+		public void setDeperment(String deperment) {
+			this.deperment = deperment;
+		}
 		public Integer getId() {
 			return id;
 		}
