@@ -11,20 +11,34 @@ public class SampleController {
 	private CarRepo cr; 
 
 	@Autowired
-	private BikeRepo bike;
+	private BikeRepo b;
 	
-	
-	
-	@GetMapping("/cart")
-	public List<CarEntity>getSample1(){
-		return cr.getjoin();
-	}
-
 	@Autowired
 	private TruckRepo tr;
 	
+	 @GetMapping("/cart") 
+	public List<CarEntity>getsamle(){
+		 return cr.findallsameNooftyers();
+	 }
+	 @GetMapping("/truckt") 
+		public List<TruckEntity>getsamle1(){
+			 return tr.findallsameNooftyers();
+		 }
+	 
+	 @GetMapping("/biket") 
+		public List<BikeEntity>getsamle2(){
+			 return b.findallsameNooftyers();
+		 }
+	 
+	/*
      @GetMapping("/Tyers") 
      public List<TruckEntity> getSample(){ 
-    	 return tr.getjoin(); }
+    	 return tr.getjoin(); 
+}
+    		@GetMapping("/cart")
+    		public List<CarEntity>getSample1(){
+    			return cr.getjoin();
+    		}	 
+     */
 		
 }

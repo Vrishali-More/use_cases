@@ -10,7 +10,7 @@ public interface CarRepo extends JpaRepository<CarEntity, Integer>{
 
 	@Query(value ="SELECT *FROM car c JOIN truck t ON t.Nooftyers=c.Nooftyers", nativeQuery=true)
 
-   public List<CarEntity>getjoin();
-	
+  // public List<CarEntity>getjoin();
+  List<CarEntity> findallsameNooftyers();
 }
 
