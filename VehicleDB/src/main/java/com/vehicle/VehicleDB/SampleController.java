@@ -15,7 +15,7 @@ public class SampleController {
 	
 	@Autowired
 	private TruckRepo tr;
-	
+	/*
 	 @GetMapping("/cart") 
 	public List<CarEntity>getsamle(){
 		 return cr.findallsameNooftyers();
@@ -30,15 +30,18 @@ public class SampleController {
 			 return b.findallsameNooftyers();
 		 }
 	 
-	/*
+	*/
      @GetMapping("/Tyers") 
      public List<TruckEntity> getSample(){ 
     	 return tr.getjoin(); 
 }
     		@GetMapping("/cart")
     		public List<CarEntity>getSample1(){
-    			return cr.getjoin();
+    			return cr.getjoin1();
     		}	 
-     */
+    		@GetMapping("/Bt") 
+    	     public List<BikeEntity> getSample2(){ 
+    	    	 return b.getjoin2(); 
+    		}
 		
 }

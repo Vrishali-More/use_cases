@@ -8,10 +8,9 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface TruckRepo extends JpaRepository<TruckEntity, Integer>{
 	
-	@Query(value ="SELECT *FROM truck t  JOIN car c ON t.Nooftyers=c.Nooftyers", nativeQuery=true)
-
-   // public List<TruckEntity>getjoin();
-	List<TruckEntity> findallsameNooftyers();
+	@Query(value ="SELECT * from truck t JOIN car c ON t.Nooftyers=c.Nooftyers;",nativeQuery=true)
+   public List<TruckEntity>getjoin();
+//	List<TruckEntity> findallsameNooftyers();
 }
 
 
