@@ -12,9 +12,6 @@ public class InsuranceController {
 	@Autowired
 	private ClientRepository c;
 	
-	@Autowired
-	private PoliciesRepository p;
-	
      @GetMapping("/c1")
    	public List<ClientEntity> join()
 	{
