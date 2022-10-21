@@ -18,8 +18,29 @@ public class ClientEntity {
 	private String Mobile;
 	private String dob;
 	private String policy;
-	private String inssurance;
+	private String termplan;
+	private String discount;
+	private String price;
+	private String finalprice;
 	
+	public String getDiscount() {
+		return discount;
+	}
+	public void setDiscount(String discount) {
+		this.discount = discount;
+	}
+	public String getPrice() {
+		return price;
+	}
+	public void setPrice(String price) {
+		this.price = price;
+	}
+	public String getFinalprice() {
+		return finalprice;
+	}
+	public void setFinalprice(String finalprice) {
+		this.finalprice = finalprice;
+	}
 	public Integer getId() {
 		return id;
 	}
@@ -57,12 +78,13 @@ public class ClientEntity {
 	public void setPolicy(String policy) {
 		this.policy = policy;
 	}
+	public String getTermplan() {
+		return termplan;
+	}
+	public void setTermplan(String termplan) {
+		this.termplan = termplan;
+	}
 
-	public String getInssurance() {
-		return inssurance;
-	}
-	public void setInssurance(String inssurance) {
-		this.inssurance = inssurance;
-	}
+	
 
 }
