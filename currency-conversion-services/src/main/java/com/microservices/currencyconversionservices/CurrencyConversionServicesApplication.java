@@ -1,4 +1,4 @@
-package com.javapoint.microservices.currencyconversionservices;
+package com.microservices.currencyconversionservices;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,7 +6,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
-@EnableFeignClients("com.javatpoint.microservices.currencyconversionservice")
+@EnableFeignClients("com.microservices.currencyconversionservice")
 @EnableDiscoveryClient
 public class CurrencyConversionServicesApplication {
 
